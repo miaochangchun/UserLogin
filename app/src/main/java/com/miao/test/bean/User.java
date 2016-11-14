@@ -4,7 +4,7 @@ package com.miao.test.bean;
  * Created by 10048 on 2016/11/14.
  */
 public class User {
-    private String username;
+    private String username;可是
     private String password;
 
     public void setPassword(String password) {
