@@ -17,11 +17,11 @@ import com.miao.test.view.IUserLoginView;
  */
 public class UserLoginActivity extends AppCompatActivity implements IUserLoginView {
 
-    private ProgressBar mPbLoading;
-    private EditText mEtUsername;
-    private EditText mEtPassword;
-    private Button mBtnClear;
-    private Button mBtnLogin;
+    private ProgressBar mPbLoading;     //ProgressBar对象
+    private EditText mEtUsername;       //用户名
+    private EditText mEtPassword;       //密码
+    private Button mBtnClear;           //清空按钮
+    private Button mBtnLogin;           //登录按钮
     private UserLoginPresenter mUserLoginPresenter = new UserLoginPresenter(this);
 
     @Override

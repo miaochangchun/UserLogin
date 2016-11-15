@@ -12,6 +12,7 @@ public class UserBiz implements IUserBiz {
             @Override
             public void run() {
                 try {
+                    //模拟正常登录，在此等待2秒
                     Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();

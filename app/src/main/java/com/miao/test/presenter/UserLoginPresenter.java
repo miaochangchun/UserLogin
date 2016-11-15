@@ -22,10 +22,10 @@ public class UserLoginPresenter {
     }
 
     public void login() {
-        userLoginView.showLoading();
+        userLoginView.showLoading();        //显示progressBar
         userBiz.login(userLoginView.getUsername(), userLoginView.getPassword(), new OnLoginListener() {
             @Override
-            public void loginSuccess(final User user) {
+            public void loginSuccess(final User user) {     //登录成功的回调，把bean类传给main，并隐藏progressBar
                 mHander.post(new Runnable() {
                     @Override
                     public void run() {
@@ -36,7 +36,7 @@ public class UserLoginPresenter {
             }
 
             @Override
-            public void loginFailed() {
+            public void loginFailed() {     //登录失败的回调，提示登录出错并隐藏progressBar
                 mHander.post(new Runnable() {
                     @Override
                     public void run() {
